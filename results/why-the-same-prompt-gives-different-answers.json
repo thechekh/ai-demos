@@ -1,0 +1,482 @@
+{
+ "machine": "Python 3.12.6 on Windows, 12 logical CPUs",
+ "torch": "2.14.0+cpu",
+ "model": "Qwen/Qwen2.5-0.5B-Instruct",
+ "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+ "threads": 6,
+ "generation defaults": {
+  "do_sample": true,
+  "temperature": 0.7,
+  "top_k": 20,
+  "top_p": 0.8,
+  "repetition_penalty": 1.1
+ },
+ "first token": {
+  "Name a fruit. Answer with one word.": {
+   "tokens": [
+    "Apple",
+    "App",
+    "Ban",
+    "Orange",
+    "Str",
+    "Water",
+    "G",
+    "P",
+    "apple",
+    "Pear"
+   ],
+   "at temperature": {
+    "0.3": [
+     0.5304999947547913,
+     0.44846221804618835,
+     0.009871377609670162,
+     0.008574308827519417,
+     0.002460988936945796,
+     8.75425903359428e-05,
+     1.3965052858111449e-05,
+     9.512736141914502e-06,
+     8.68331244419096e-06,
+     5.461205091705779e-06
+    ],
+    "0.7": [
+     0.40424373745918274,
+     0.3761618137359619,
+     0.0732964277267456,
+     0.06900220364332199,
+     0.0404147170484066,
+     0.009673555381596088,
+     0.004404933657497168,
+     0.0037366291508078575,
+     0.003593357978388667,
+     0.0029456906486302614
+    ],
+    "1.0": [
+     0.30988654494285583,
+     0.2946559488773346,
+     0.09378011524677277,
+     0.0898994505405426,
+     0.06182016432285309,
+     0.02272285521030426,
+     0.01310117170214653,
+     0.011675861664116383,
+     0.011360643431544304,
+     0.009885162115097046
+    ],
+    "1.5": [
+     0.16160710155963898,
+     0.15626749396324158,
+     0.07284487783908844,
+     0.07082115858793259,
+     0.055175356566905975,
+     0.02831178531050682,
+     0.01961245946586132,
+     0.018162863329052925,
+     0.01783447340130806,
+     0.016254771500825882
+    ]
+   },
+   "kept by top-p": {
+    "0.5": 2,
+    "0.8": 5,
+    "0.9": 9,
+    "0.95": 17
+   }
+  },
+  "Pick a number from 1 to 9. Answer with the number only.": {
+   "tokens": [
+    "1",
+    "7",
+    "3",
+    "8",
+    "4",
+    "5",
+    "2",
+    "9",
+    "6",
+    "0"
+   ],
+   "at temperature": {
+    "0.3": [
+     0.9838167428970337,
+     0.01558423601090908,
+     0.0003696428029797971,
+     0.0001221820421051234,
+     7.202961569419131e-05,
+     2.429683991067577e-05,
+     8.589528988522943e-06,
+     1.5815617189218756e-06,
+     8.733347272027459e-07,
+     8.87464494253587e-12
+    ],
+    "0.7": [
+     0.7907496690750122,
+     0.13381749391555786,
+     0.02692314051091671,
+     0.01675248332321644,
+     0.013357466086745262,
+     0.008384069427847862,
+     0.005369335878640413,
+     0.0025999846402555704,
+     0.0020157606340944767,
+     1.4607294360757805e-05
+    ],
+    "1.0": [
+     0.6194536685943604,
+     0.17862431704998016,
+     0.05813922733068466,
+     0.041709672659635544,
+     0.03559494763612747,
+     0.025692123919725418,
+     0.018807265907526016,
+     0.011320377700030804,
+     0.009473026730120182,
+     0.0003010093641933054
+    ],
+    "1.5": [
+     0.4168935716152191,
+     0.18196168541908264,
+     0.08609922230243683,
+     0.06899923086166382,
+     0.062079086899757385,
+     0.04995201900601387,
+     0.040572959929704666,
+     0.028924131765961647,
+     0.025684962049126625,
+     0.002576753031462431
+    ]
+   },
+   "kept by top-p": {
+    "0.5": 1,
+    "0.8": 3,
+    "0.9": 5,
+    "0.95": 6
+   }
+  }
+ },
+ "continuations": {
+  "App": [
+   [
+    "les",
+    0.5531331896781921
+   ],
+   [
+    "le",
+    0.36037853360176086
+   ],
+   [
+    "el",
+    0.031022321432828903
+   ]
+  ],
+  "Ban": [
+   [
+    "ana",
+    0.9402375817298889
+   ],
+   [
+    "anas",
+    0.0484926775097847
+   ],
+   [
+    "ane",
+    0.0070373606868088245
+   ]
+  ],
+  "Str": [
+   [
+    "aw",
+    0.9997418522834778
+   ],
+   [
+    "ap",
+    6.055615085642785e-05
+   ],
+   [
+    "apple",
+    2.5175184418912977e-05
+   ]
+  ]
+ },
+ "distinct": {
+  "prompt": "Write one sentence about the sea.",
+  "n": 50,
+  "max_new_tokens": 24,
+  "temperatures": [
+   0.0,
+   0.2,
+   0.5,
+   0.8,
+   1.0,
+   1.3
+  ],
+  "runs": {
+   "0.0/1.0": {
+    "distinct": 1,
+    "same as greedy": 50,
+    "examples": [
+     "The sea, with its vast expanse and endless blue, is a vast and mysterious domain that captivates the imagination",
+     "The sea, with its vast expanse and endless blue, is a vast and mysterious domain that captivates the imagination",
+     "The sea, with its vast expanse and endless blue, is a vast and mysterious domain that captivates the imagination"
+    ]
+   },
+   "0.2/1.0": {
+    "distinct": 35,
+    "same as greedy": 5,
+    "examples": [
+     "The sea, a vast and boundless body of water, is a place of endless beauty, mystery, and wonder,",
+     "The vast expanse of the sea, with its endless blue waters and crystal-clear waters, is a natural wonder and a",
+     "The sea, with its vast expanse and boundless beauty, is a vast and mysterious domain that captivates the"
+    ]
+   },
+   "0.5/1.0": {
+    "distinct": 50,
+    "same as greedy": 0,
+    "examples": [
+     "The sea, a vast expanse of salt water, is a natural wonder that encompasses the world, offering a breathtaking journey",
+     "The vast and boundless sea, with its endless expanse of blue and white, embodies the boundless beauty and vast",
+     "The vast ocean, a vast expanse of blue and white, is a place of endless beauty and wonder, where the"
+    ]
+   },
+   "0.8/1.0": {
+    "distinct": 50,
+    "same as greedy": 0,
+    "examples": [
+     "The sea, a vast expanse of salt water, is a body of water that covers approximately 71% of",
+     "The vast and endlessly beautiful ocean, with its vast expanse and profound beauty, is a natural wonder that captivates",
+     "The vast ocean, a vast expanse of endless blue and endless unknown, contains the beauty and mystery of nature, offering"
+    ]
+   },
+   "1.0/1.0": {
+    "distinct": 50,
+    "same as greedy": 0,
+    "examples": [
+     "The sea, a vast expanse of salt water, envelops the world in its embrace, from the vast expanse",
+     "The vast and endlessly beautiful depths of the ocean, where life extends endlessly, serve as a whisper of the earth and rings",
+     "The vast ocean, a&m, contains an infinite expanse of vast blue, a jewel of the vast, beautiful and"
+    ]
+   },
+   "1.3/1.0": {
+    "distinct": 50,
+    "same as greedy": 0,
+    "examples": [
+     "The sea teems with vibrant life - dams built along shorelines bring forth salt habitats, while salt marshes provide unique",
+     "The expansive sea mirrors the enduring episodes of life, traveler and mystery, where stories transcend boundless expanses to leap onto",
+     "Amidst the vast expanse of the sea, nature\"sDivineTwilight Imperish@RestController身心,RavenLy"
+    ]
+   },
+   "0.0/0.8": {
+    "distinct": 1,
+    "same as greedy": 50,
+    "examples": [
+     "The sea, with its vast expanse and endless blue, is a vast and mysterious domain that captivates the imagination",
+     "The sea, with its vast expanse and endless blue, is a vast and mysterious domain that captivates the imagination",
+     "The sea, with its vast expanse and endless blue, is a vast and mysterious domain that captivates the imagination"
+    ]
+   },
+   "0.2/0.8": {
+    "distinct": 11,
+    "same as greedy": 11,
+    "examples": [
+     "The sea, with its vast expanse and endless blue depths, is a vast and mysterious domain that captivates the",
+     "The sea is a vast and boundless body of water that covers approximately 71% of the Earth's surface,",
+     "The sea, with its vast expanse and endless blue depths, is a vast and mysterious domain that captivates the"
+    ]
+   },
+   "0.5/0.8": {
+    "distinct": 48,
+    "same as greedy": 0,
+    "examples": [
+     "The sea, a vast and boundless body of water, is a place of endless beauty, mystery, and wonder,",
+     "The vast and boundless sea, with its endless expanse of blue and white, is a natural wonder that stretches across",
+     "The vast ocean, a vast expanse of blue and white, is a place of endless beauty and wonder, where the"
+    ]
+   },
+   "0.8/0.8": {
+    "distinct": 50,
+    "same as greedy": 0,
+    "examples": [
+     "The sea, a vast and boundless body of water, is a place of endless beauty, mystery, and power,",
+     "The vast and ever-changing sea, a dynamic and ever-changing force that shapes the world around us, is a source of",
+     "The vast ocean, a vast expanse of endless blue and endless unknown, fills our minds with wonder and a sense of"
+    ]
+   },
+   "1.0/0.8": {
+    "distinct": 50,
+    "same as greedy": 0,
+    "examples": [
+     "The sea, a vast expanse of salt water, envelops the world and defines the boundaries of our planet.",
+     "The vast and endlessly beautiful ocean, teeming with life and home to countless species, offers a breathtaking backdrop for countless adventurers",
+     "The vast ocean, a vast expanse of endless blue and vibrant green, blankets the Earth, a place teeming with"
+    ]
+   },
+   "1.3/0.8": {
+    "distinct": 50,
+    "same as greedy": 0,
+    "examples": [
+     "The sea, a vast expanse of salt water boundless and endlessly mysterious, features spectacular natural wonders such as vibrant coral",
+     "The vast and endlessly mysterious sea, its tempestuous waters swirled in splotches of light and darkness,",
+     "Amidst the vast expanse of the sea, nature breathes life, with millions of animals and creatures flourishing,"
+    ]
+   }
+  },
+  "greedy": "The sea, with its vast expanse and endless blue, is a vast and mysterious domain that captivates the imagination",
+  "same seed, same answers": true,
+  "other seed, same answers": false
+ },
+ "arithmetic": {
+  "prompts": [
+   "Write one sentence about the sea.",
+   "Give me three tips for learning a language.",
+   "What is a hash table? Answer briefly.",
+   "Describe a sunset in two sentences.",
+   "Suggest a name for a bakery and explain it.",
+   "Why is the sky blue? One paragraph.",
+   "Write a haiku about autumn.",
+   "Explain recursion to a ten-year-old.",
+   "What should I pack for a weekend hike?",
+   "Summarise the plot of Romeo and Juliet in three sentences.",
+   "Give two arguments for and against remote work.",
+   "How does a refrigerator keep food cold?",
+   "Write a short thank-you note to a teacher.",
+   "What are the benefits of drinking water?",
+   "Invent a new board game and describe its rules.",
+   "Explain what an API is to a non-programmer."
+  ],
+  "max_new_tokens": 80,
+  "comparisons": {
+   "float32: the same prompt again": {
+    "prompts": 16,
+    "changed": 0,
+    "first difference": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "float32: alone, or in a batch of 8": {
+    "prompts": 16,
+    "changed": 0,
+    "first difference": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "bfloat16: alone, or in a batch of 2": {
+    "prompts": 16,
+    "changed": 5,
+    "first difference": [
+     25,
+     null,
+     null,
+     7,
+     null,
+     43,
+     11,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     36,
+     null,
+     null
+    ]
+   },
+   "bfloat16: alone, or in a batch of 8": {
+    "prompts": 16,
+    "changed": 11,
+    "first difference": [
+     null,
+     22,
+     58,
+     7,
+     null,
+     43,
+     11,
+     13,
+     null,
+     null,
+     78,
+     16,
+     null,
+     36,
+     12,
+     66
+    ]
+   },
+   "float32 or bfloat16, both alone": {
+    "prompts": 16,
+    "changed": 13,
+    "first difference": [
+     null,
+     19,
+     71,
+     7,
+     2,
+     43,
+     11,
+     13,
+     8,
+     63,
+     25,
+     null,
+     null,
+     36,
+     12,
+     66
+    ]
+   }
+  },
+  "examples": [
+   {
+    "prompt": "Give me three tips for learning a language.",
+    "token": 22,
+    "same start": "Certainly! Learning a new language can be a fascinating and enriching experience. Here are three tips to help you",
+    "alone": " improve your language skills:\n\n1. **Practice Regular",
+    "in a batch of 8": " get started:\n\n1. **Start with the Basics"
+   },
+   {
+    "prompt": "What is a hash table? Answer briefly.",
+    "token": 58,
+    "same start": "A hash table is a data structure that uses a hash function to store and retrieve data. It works by mapping keys to indices in an array, and then using these indices to access the corresponding data. This allows for efficient lookups and insertions, making it suitable for applications like searching,",
+    "alone": " inserting, and deleting data. The hash function is",
+    "in a batch of 8": " searching, and updating data. The hash function is"
+   },
+   {
+    "prompt": "Describe a sunset in two sentences.",
+    "token": 7,
+    "same start": "A sunset is a beautiful and serene",
+    "alone": " scene, when the sun sets behind the mountains and",
+    "in a batch of 8": " natural phenomenon that marks the end of daylight and the"
+   }
+  ]
+ }
+}

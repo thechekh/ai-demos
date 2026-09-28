@@ -1,0 +1,820 @@
+{
+ "machine": "Python 3.12.6 on Windows, 12 logical CPUs",
+ "tiktoken": "0.14.0",
+ "vocabulary": {
+  "GPT-2": 50257,
+  "GPT-4 (cl100k_base)": 100277,
+  "GPT-4o (o200k_base)": 200019,
+  "Qwen2.5": 151665
+ },
+ "encoding for model": {
+  "gpt-4": "cl100k_base",
+  "gpt-4o": "o200k_base",
+  "gpt2": "gpt2"
+ },
+ "pieces": {
+  "Tokenizers read pieces, not letters: strawberry, 2026, unbelievable.": {
+   "GPT-2": [
+    "Token",
+    "izers",
+    " read",
+    " pieces",
+    ",",
+    " not",
+    " letters",
+    ":",
+    " strawberry",
+    ",",
+    " 20",
+    "26",
+    ",",
+    " unbelievable",
+    "."
+   ],
+   "GPT-4 (cl100k_base)": [
+    "Token",
+    "izers",
+    " read",
+    " pieces",
+    ",",
+    " not",
+    " letters",
+    ":",
+    " strawberry",
+    ",",
+    " ",
+    "202",
+    "6",
+    ",",
+    " unbelievable",
+    "."
+   ],
+   "GPT-4o (o200k_base)": [
+    "Token",
+    "izers",
+    " read",
+    " pieces",
+    ",",
+    " not",
+    " letters",
+    ":",
+    " strawberry",
+    ",",
+    " ",
+    "202",
+    "6",
+    ",",
+    " unbelievable",
+    "."
+   ],
+   "Qwen2.5": [
+    "Token",
+    "izers",
+    " read",
+    " pieces",
+    ",",
+    " not",
+    " letters",
+    ":",
+    " strawberry",
+    ",",
+    " ",
+    "2",
+    "0",
+    "2",
+    "6",
+    ",",
+    " unbelievable",
+    "."
+   ]
+  },
+  "strawberry": {
+   "GPT-2": [
+    "st",
+    "raw",
+    "berry"
+   ],
+   "GPT-4 (cl100k_base)": [
+    "str",
+    "aw",
+    "berry"
+   ],
+   "GPT-4o (o200k_base)": [
+    "st",
+    "raw",
+    "berry"
+   ],
+   "Qwen2.5": [
+    "str",
+    "aw",
+    "berry"
+   ]
+  },
+  " strawberry": {
+   "GPT-2": [
+    " strawberry"
+   ],
+   "GPT-4 (cl100k_base)": [
+    " strawberry"
+   ],
+   "GPT-4o (o200k_base)": [
+    " strawberry"
+   ],
+   "Qwen2.5": [
+    " strawberry"
+   ]
+  },
+  "Strawberry": {
+   "GPT-2": [
+    "St",
+    "raw",
+    "berry"
+   ],
+   "GPT-4 (cl100k_base)": [
+    "Str",
+    "aw",
+    "berry"
+   ],
+   "GPT-4o (o200k_base)": [
+    "Str",
+    "aw",
+    "berry"
+   ],
+   "Qwen2.5": [
+    "Str",
+    "aw",
+    "berry"
+   ]
+  },
+  "STRAWBERRY": {
+   "GPT-2": [
+    "ST",
+    "RAW",
+    "BER",
+    "RY"
+   ],
+   "GPT-4 (cl100k_base)": [
+    "ST",
+    "RAW",
+    "B",
+    "ERRY"
+   ],
+   "GPT-4o (o200k_base)": [
+    "ST",
+    "RAW",
+    "B",
+    "ERRY"
+   ],
+   "Qwen2.5": [
+    "ST",
+    "RAW",
+    "B",
+    "ERRY"
+   ]
+  },
+  "1234567890": {
+   "GPT-2": [
+    "123",
+    "45",
+    "678",
+    "90"
+   ],
+   "GPT-4 (cl100k_base)": [
+    "123",
+    "456",
+    "789",
+    "0"
+   ],
+   "GPT-4o (o200k_base)": [
+    "123",
+    "456",
+    "789",
+    "0"
+   ],
+   "Qwen2.5": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+   ]
+  },
+  " 2026": {
+   "GPT-2": [
+    " 20",
+    "26"
+   ],
+   "GPT-4 (cl100k_base)": [
+    " ",
+    "202",
+    "6"
+   ],
+   "GPT-4o (o200k_base)": [
+    " ",
+    "202",
+    "6"
+   ],
+   "Qwen2.5": [
+    " ",
+    "2",
+    "0",
+    "2",
+    "6"
+   ]
+  },
+  "👍": {
+   "GPT-2": [
+    "?",
+    "?"
+   ],
+   "GPT-4 (cl100k_base)": [
+    "?",
+    "?",
+    "?"
+   ],
+   "GPT-4o (o200k_base)": [
+    "👍"
+   ],
+   "Qwen2.5": [
+    "👍"
+   ]
+  }
+ },
+ "chat template": {
+  "text": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n",
+  "tokens": 30
+ },
+ "letter counts": {
+  "words": [
+   {
+    "word": "apple",
+    "letter": "l",
+    "count": 1,
+    "tokens": 1,
+    "the word as written": {
+     "answer": "3",
+     "correct": false
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": false
+    }
+   },
+   {
+    "word": "orange",
+    "letter": "g",
+    "count": 1,
+    "tokens": 1,
+    "the word as written": {
+     "answer": "2",
+     "correct": false
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": false
+    }
+   },
+   {
+    "word": "python",
+    "letter": "y",
+    "count": 1,
+    "tokens": 1,
+    "the word as written": {
+     "answer": "3",
+     "correct": false
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": false
+    }
+   },
+   {
+    "word": "window",
+    "letter": "i",
+    "count": 1,
+    "tokens": 1,
+    "the word as written": {
+     "answer": "1",
+     "correct": true
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": false
+    }
+   },
+   {
+    "word": "garden",
+    "letter": "r",
+    "count": 1,
+    "tokens": 2,
+    "the word as written": {
+     "answer": "3",
+     "correct": false
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": false
+    }
+   },
+   {
+    "word": "letter",
+    "letter": "t",
+    "count": 2,
+    "tokens": 1,
+    "the word as written": {
+     "answer": "3",
+     "correct": false
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": false
+    }
+   },
+   {
+    "word": "balloon",
+    "letter": "o",
+    "count": 2,
+    "tokens": 2,
+    "the word as written": {
+     "answer": "3",
+     "correct": false
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": false
+    }
+   },
+   {
+    "word": "committee",
+    "letter": "t",
+    "count": 2,
+    "tokens": 1,
+    "the word as written": {
+     "answer": "3",
+     "correct": false
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": false
+    }
+   },
+   {
+    "word": "difficult",
+    "letter": "f",
+    "count": 2,
+    "tokens": 2,
+    "the word as written": {
+     "answer": "3",
+     "correct": false
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": false
+    }
+   },
+   {
+    "word": "coffee",
+    "letter": "f",
+    "count": 2,
+    "tokens": 1,
+    "the word as written": {
+     "answer": "3",
+     "correct": false
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": false
+    }
+   },
+   {
+    "word": "strawberry",
+    "letter": "r",
+    "count": 3,
+    "tokens": 3,
+    "the word as written": {
+     "answer": "3",
+     "correct": true
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "1",
+     "correct": false
+    }
+   },
+   {
+    "word": "banana",
+    "letter": "a",
+    "count": 3,
+    "tokens": 1,
+    "the word as written": {
+     "answer": "3",
+     "correct": true
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": true
+    }
+   },
+   {
+    "word": "cheese",
+    "letter": "e",
+    "count": 3,
+    "tokens": 2,
+    "the word as written": {
+     "answer": "3",
+     "correct": true
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": true
+    }
+   },
+   {
+    "word": "parallel",
+    "letter": "l",
+    "count": 3,
+    "tokens": 1,
+    "the word as written": {
+     "answer": "3",
+     "correct": true
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": true
+    }
+   },
+   {
+    "word": "pepper",
+    "letter": "p",
+    "count": 3,
+    "tokens": 2,
+    "the word as written": {
+     "answer": "3",
+     "correct": true
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "4",
+     "correct": false
+    }
+   },
+   {
+    "word": "mississippi",
+    "letter": "s",
+    "count": 4,
+    "tokens": 2,
+    "the word as written": {
+     "answer": "4",
+     "correct": true
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": false
+    }
+   },
+   {
+    "word": "assessment",
+    "letter": "s",
+    "count": 4,
+    "tokens": 1,
+    "the word as written": {
+     "answer": "3",
+     "correct": false
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": false
+    }
+   },
+   {
+    "word": "independence",
+    "letter": "e",
+    "count": 4,
+    "tokens": 2,
+    "the word as written": {
+     "answer": "3",
+     "correct": false
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "3",
+     "correct": false
+    }
+   },
+   {
+    "word": "referee",
+    "letter": "e",
+    "count": 4,
+    "tokens": 2,
+    "the word as written": {
+     "answer": "3",
+     "correct": false
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "4",
+     "correct": true
+    }
+   },
+   {
+    "word": "tennessee",
+    "letter": "e",
+    "count": 4,
+    "tokens": 3,
+    "the word as written": {
+     "answer": "3",
+     "correct": false
+    },
+    "spelled out, s-t-r-a-w...": {
+     "answer": "1",
+     "correct": false
+    }
+   }
+  ],
+  "spelled pieces": [
+   "s",
+   "-t",
+   "-r",
+   "-a",
+   "-w",
+   "-b",
+   "-e",
+   "-r",
+   "-r",
+   "-y"
+  ],
+  "the word as written": 7,
+  "the word as written, answers given": {
+   "3": 17,
+   "2": 1,
+   "1": 1,
+   "4": 1
+  },
+  "spelled out, s-t-r-a-w...": 4,
+  "spelled out, s-t-r-a-w..., answers given": {
+   "3": 16,
+   "1": 2,
+   "4": 2
+  }
+ },
+ "bpe": {
+  "trained on": "NTREX English sentences 1-1,500",
+  "evaluated on": "sentences 1,501-1,997",
+  "first merges": [
+   [
+    "·",
+    "t",
+    "·t"
+   ],
+   [
+    "·",
+    "a",
+    "·a"
+   ],
+   [
+    "h",
+    "e",
+    "he"
+   ],
+   [
+    "i",
+    "n",
+    "in"
+   ],
+   [
+    "r",
+    "e",
+    "re"
+   ],
+   [
+    "o",
+    "n",
+    "on"
+   ],
+   [
+    "·t",
+    "he",
+    "·the"
+   ],
+   [
+    "e",
+    "r",
+    "er"
+   ],
+   [
+    "·",
+    "s",
+    "·s"
+   ],
+   [
+    "·",
+    "w",
+    "·w"
+   ],
+   [
+    "a",
+    "t",
+    "at"
+   ],
+   [
+    "e",
+    "n",
+    "en"
+   ]
+  ],
+  "checkpoints": [
+   0,
+   25,
+   50,
+   100,
+   250,
+   500,
+   1000,
+   2000
+  ],
+  "characters per token": {
+   "English": [
+    0.9999648240322212,
+    1.2937468711600602,
+    1.476561485521361,
+    1.6696522964877247,
+    2.0178520726859737,
+    2.323837161775525,
+    2.6779237906834346,
+    3.062153282705876
+   ],
+   "Russian": [
+    0.5505998933911235,
+    0.5509706190975866,
+    0.5510862720403022,
+    0.5513804419164297,
+    0.5523761933566526,
+    0.5527202231618099,
+    0.5531326538674252,
+    0.5540616591336769
+   ]
+  },
+  "strawberry after 2,000 merges": [
+   "·st",
+   "raw",
+   "ber",
+   "ry"
+  ],
+  "unbelievable after 2,000 merges": [
+   "·un",
+   "b",
+   "el",
+   "ie",
+   "v",
+   "able"
+  ]
+ },
+ "languages": {
+  "English": {
+   "characters": 247720,
+   "tokens": {
+    "GPT-2": 52128,
+    "GPT-4 (cl100k_base)": 52250,
+    "GPT-4o (o200k_base)": 51860,
+    "Qwen2.5": 53052
+   },
+   "words": 42034
+  },
+  "German": {
+   "characters": 295650,
+   "tokens": {
+    "GPT-2": 111418,
+    "GPT-4 (cl100k_base)": 81940,
+    "GPT-4o (o200k_base)": 67599,
+    "Qwen2.5": 81798
+   }
+  },
+  "French": {
+   "characters": 293108,
+   "tokens": {
+    "GPT-2": 103620,
+    "GPT-4 (cl100k_base)": 82775,
+    "GPT-4o (o200k_base)": 70384,
+    "Qwen2.5": 82697
+   }
+  },
+  "Spanish": {
+   "characters": 288228,
+   "tokens": {
+    "GPT-2": 97974,
+    "GPT-4 (cl100k_base)": 76379,
+    "GPT-4o (o200k_base)": 65103,
+    "Qwen2.5": 76672
+   }
+  },
+  "Turkish": {
+   "characters": 265613,
+   "tokens": {
+    "GPT-2": 126874,
+    "GPT-4 (cl100k_base)": 99978,
+    "GPT-4o (o200k_base)": 74194,
+    "Qwen2.5": 85778
+   }
+  },
+  "Vietnamese": {
+   "characters": 271121,
+   "tokens": {
+    "GPT-2": 231947,
+    "GPT-4 (cl100k_base)": 128217,
+    "GPT-4o (o200k_base)": 77250,
+    "Qwen2.5": 76070
+   }
+  },
+  "Russian": {
+   "characters": 274893,
+   "tokens": {
+    "GPT-2": 294433,
+    "GPT-4 (cl100k_base)": 130778,
+    "GPT-4o (o200k_base)": 76416,
+    "Qwen2.5": 96206
+   }
+  },
+  "Ukrainian": {
+   "characters": 262783,
+   "tokens": {
+    "GPT-2": 296493,
+    "GPT-4 (cl100k_base)": 156036,
+    "GPT-4o (o200k_base)": 92961,
+    "Qwen2.5": 133725
+   }
+  },
+  "Greek": {
+   "characters": 299127,
+   "tokens": {
+    "GPT-2": 330784,
+    "GPT-4 (cl100k_base)": 262865,
+    "GPT-4o (o200k_base)": 111025,
+    "Qwen2.5": 255052
+   }
+  },
+  "Hebrew": {
+   "characters": 200296,
+   "tokens": {
+    "GPT-2": 231430,
+    "GPT-4 (cl100k_base)": 191568,
+    "GPT-4o (o200k_base)": 79525,
+    "Qwen2.5": 80602
+   }
+  },
+  "Arabic": {
+   "characters": 231181,
+   "tokens": {
+    "GPT-2": 235249,
+    "GPT-4 (cl100k_base)": 164731,
+    "GPT-4o (o200k_base)": 74306,
+    "Qwen2.5": 88281
+   }
+  },
+  "Hindi": {
+   "characters": 261575,
+   "tokens": {
+    "GPT-2": 398023,
+    "GPT-4 (cl100k_base)": 256489,
+    "GPT-4o (o200k_base)": 83875,
+    "Qwen2.5": 242094
+   }
+  },
+  "Thai": {
+   "characters": 237468,
+   "tokens": {
+    "GPT-2": 429076,
+    "GPT-4 (cl100k_base)": 209121,
+    "GPT-4o (o200k_base)": 94997,
+    "Qwen2.5": 127017
+   }
+  },
+  "Chinese": {
+   "characters": 84961,
+   "tokens": {
+    "GPT-2": 167852,
+    "GPT-4 (cl100k_base)": 99489,
+    "GPT-4o (o200k_base)": 65290,
+    "Qwen2.5": 54396
+   }
+  },
+  "Japanese": {
+   "characters": 111626,
+   "tokens": {
+    "GPT-2": 149989,
+    "GPT-4 (cl100k_base)": 119873,
+    "GPT-4o (o200k_base)": 87927,
+    "Qwen2.5": 76769
+   }
+  },
+  "Korean": {
+   "characters": 133405,
+   "tokens": {
+    "GPT-2": 271538,
+    "GPT-4 (cl100k_base)": 129238,
+    "GPT-4o (o200k_base)": 79259,
+    "Qwen2.5": 91360
+   }
+  }
+ }
+}

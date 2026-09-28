@@ -1,0 +1,64 @@
+# Paper — matplotlib style for article charts (WRITING.md §4.3, DESIGN.md §2.1).
+#
+#   import matplotlib.pyplot as plt
+#   plt.style.use("docs/paper.mplstyle")
+#   ...
+#   fig.savefig("apps/web/public/images/articles/<slug>/<name>.svg")
+#
+# One series takes the accent; to make a point, colour the bar that matters with
+# the accent and the rest with the second colour (b8b8ac).
+
+# Transparent, so the chart sits on the page's paper ground
+figure.facecolor: none
+axes.facecolor: none
+savefig.transparent: True
+savefig.bbox: tight
+savefig.format: svg
+svg.fonttype: path
+svg.hashsalt: chekh-dev
+
+figure.figsize: 6.4, 3.6
+figure.dpi: 100
+
+# Type: the site's serif. experiments/_common.py registers the Lora files in
+# experiments/fonts; elsewhere, install Lora or get DejaVu Serif (lining figures —
+# never Georgia, whose old-style numerals wobble in a chart).
+font.family: serif
+font.serif: Lora, DejaVu Serif
+font.size: 11
+text.color: 1c1e1a
+axes.titlesize: 12
+axes.titleweight: semibold
+axes.titlelocation: left
+axes.titlepad: 12
+axes.labelsize: 10
+axes.labelcolor: 6f7268
+
+# Chart furniture recedes: hairline axes and grid, no ticks, no box
+axes.edgecolor: b8b8ac
+axes.linewidth: 0.8
+axes.spines.top: False
+axes.spines.right: False
+axes.grid: True
+axes.grid.axis: y
+axes.axisbelow: True
+grid.color: e4e4da
+grid.linewidth: 0.8
+xtick.color: 6f7268
+ytick.color: 6f7268
+xtick.labelsize: 10
+ytick.labelsize: 10
+xtick.major.size: 0
+ytick.major.size: 0
+xtick.minor.size: 0
+ytick.minor.size: 0
+xtick.major.pad: 6
+ytick.major.pad: 6
+
+# Marks: accent first, then the de-emphasis grey, then secondary ink
+axes.prop_cycle: cycler('color', ['2f5d3f', 'b8b8ac', '6f7268'])
+lines.linewidth: 2
+lines.markersize: 6
+patch.linewidth: 0
+legend.frameon: False
+legend.fontsize: 10
