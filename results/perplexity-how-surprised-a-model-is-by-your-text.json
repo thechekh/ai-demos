@@ -1,0 +1,202 @@
+{
+ "machine": "Python 3.12.6 on Windows, 12 logical CPUs",
+ "torch": "2.14.0+cpu",
+ "sentences": 200,
+ "token by token": [
+  {
+   "text": "The Eiffel Tower is in Paris.",
+   "tokens": [
+    "The",
+    " E",
+    "iff",
+    "el",
+    " Tower",
+    " is",
+    " in",
+    " Paris",
+    "."
+   ],
+   "bits": [
+    8.252460479736328,
+    11.550382614135742,
+    4.4761738777160645,
+    0.006989955902099609,
+    0.32031604647636414,
+    1.1830430030822754,
+    5.746821403503418,
+    1.4382332563400269,
+    4.145195484161377
+   ],
+   "answer": "Paris",
+   "answer tokens": [
+    7
+   ],
+   "answer bits": 1.4382332563400269,
+   "answer probability": 0.36901893325652
+  },
+  {
+   "text": "The Eiffel Tower is in Rome.",
+   "tokens": [
+    "The",
+    " E",
+    "iff",
+    "el",
+    " Tower",
+    " is",
+    " in",
+    " Rome",
+    "."
+   ],
+   "bits": [
+    8.252460479736328,
+    11.550382614135742,
+    4.4761738777160645,
+    0.006989955902099609,
+    0.32031604647636414,
+    1.1830430030822754,
+    5.746821403503418,
+    19.790313720703125,
+    3.806057929992676
+   ],
+   "answer": "Rome",
+   "answer tokens": [
+    7
+   ],
+   "answer bits": 19.790313720703125,
+   "answer probability": 1.1028639641387008e-06
+  },
+  {
+   "text": "The capital of Australia is Canberra.",
+   "tokens": [
+    "The",
+    " capital",
+    " of",
+    " Australia",
+    " is",
+    " Canberra",
+    "."
+   ],
+   "bits": [
+    8.252460479736328,
+    12.002168655395508,
+    1.5740431547164917,
+    6.746440410614014,
+    0.7967843413352966,
+    1.9319485425949097,
+    1.2697808742523193
+   ],
+   "answer": "Canberra",
+   "answer tokens": [
+    5
+   ],
+   "answer bits": 1.9319485425949097,
+   "answer probability": 0.2620749662858732
+  },
+  {
+   "text": "The capital of Australia is Sydney.",
+   "tokens": [
+    "The",
+    " capital",
+    " of",
+    " Australia",
+    " is",
+    " Sydney",
+    "."
+   ],
+   "bits": [
+    8.252460479736328,
+    12.002168655395508,
+    1.5740431547164917,
+    6.746440410614014,
+    0.7967843413352966,
+    4.273660182952881,
+    1.3925011157989502
+   ],
+   "answer": "Sydney",
+   "answer tokens": [
+    5
+   ],
+   "answer bits": 4.273660182952881,
+   "answer probability": 0.051701136946304974
+  }
+ ],
+ "text types": {
+  "news sentences": {
+   "texts": 200,
+   "tokens": 5220,
+   "perplexity": 57.27225470130502
+  },
+  "the same sentences, words shuffled": {
+   "texts": 200,
+   "tokens": 5254,
+   "perplexity": 2463.7069322423895
+  },
+  "Python code (textwrap.py)": {
+   "texts": 14,
+   "tokens": 4429,
+   "perplexity": 7.9758395453369015
+  },
+  "random letters": {
+   "texts": 40,
+   "tokens": 2569,
+   "perplexity": 1112.6635094928881
+  },
+  "one word, repeated": {
+   "texts": 1,
+   "tokens": 60,
+   "perplexity": 9.264318588096835
+  },
+  "the next sentence, written by the journalist": {
+   "texts": 40,
+   "tokens": 1172,
+   "perplexity": 19.828385576373165,
+   "example": "There is consternation among some AMs at a suggestion their title should change to MWPs (Member of the Welsh Parliament)."
+  },
+  "the next sentence, written by the model": {
+   "texts": 40,
+   "tokens": 1427,
+   "perplexity": 2.231219673546191,
+   "example": "The Welsh Assembly Government's concerns about the image of its citizens align with the broader trend of the UK's political landscape, where the image of the working class and the working poor is often portrayed in a"
+  },
+  "example prompt": "Continue this news report with its next sentence: Welsh AMs worried about 'looking like muppets'"
+ },
+ "languages": {
+  "English": {
+   "tokens": 5220,
+   "perplexity per token": 57.27225470130502,
+   "total bits": 30483.570667385196,
+   "bits per sentence": 152.417853336926
+  },
+  "German": {
+   "tokens": 8071,
+   "perplexity per token": 52.8718682044889,
+   "total bits": 46201.861612439134,
+   "bits per sentence": 231.00930806219566
+  },
+  "Russian": {
+   "tokens": 9701,
+   "perplexity per token": 19.52194523617483,
+   "total bits": 41588.42865408879,
+   "bits per sentence": 207.94214327044395
+  },
+  "Chinese": {
+   "tokens": 5629,
+   "perplexity per token": 114.6055665295136,
+   "total bits": 38505.361996338295,
+   "bits per sentence": 192.52680998169149
+  },
+  "Hindi": {
+   "tokens": 24207,
+   "perplexity per token": 6.369226219914896,
+   "total bits": 64659.75618570816,
+   "bits per sentence": 323.2987809285408
+  }
+ },
+ "context": {
+  "documents": 40,
+  "tokens alone": 7249,
+  "tokens in context": 7228,
+  "perplexity alone": 50.64211293073856,
+  "perplexity in context": 16.463784199551124
+ }
+}

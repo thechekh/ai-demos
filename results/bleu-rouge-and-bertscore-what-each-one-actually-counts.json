@@ -1,0 +1,221 @@
+{
+ "machine": "Python 3.12.6 on Windows, 12 logical CPUs",
+ "bertscore model": "roberta-large, layer 17",
+ "summeval revision": "bfc121155064afa2d81b5505682ffc0d96f4334c",
+ "surprises": [
+  {
+   "pair": "identical",
+   "reference": "The drug is safe for children.",
+   "candidate": "The drug is safe for children.",
+   "BLEU": 1.0,
+   "ROUGE-1": 1.0,
+   "ROUGE-2": 1.0,
+   "ROUGE-L": 1.0,
+   "BERTScore": 0.9999999403953552
+  },
+  {
+   "pair": "the same meaning, other words",
+   "reference": "The drug is safe for children.",
+   "candidate": "Kids can take this medicine without risk.",
+   "BLEU": 0.0,
+   "ROUGE-1": 0.0,
+   "ROUGE-2": 0.0,
+   "ROUGE-L": 0.0,
+   "BERTScore": 0.9028579331236176
+  },
+  {
+   "pair": "the opposite meaning",
+   "reference": "The drug is safe for children.",
+   "candidate": "The drug is not safe for children.",
+   "BLEU": 0.4974292207467277,
+   "ROUGE-1": 0.923076923076923,
+   "ROUGE-2": 0.7272727272727272,
+   "ROUGE-L": 0.923076923076923,
+   "BERTScore": 0.9847802610938664
+  },
+  {
+   "pair": "a different fact",
+   "reference": "The drug is safe for children.",
+   "candidate": "The drug is safe for adults.",
+   "BLEU": 0.8034284189446518,
+   "ROUGE-1": 0.8333333333333334,
+   "ROUGE-2": 0.8000000000000002,
+   "ROUGE-L": 0.8333333333333334,
+   "BERTScore": 0.983273446559906
+  },
+  {
+   "pair": "the words shuffled",
+   "reference": "The drug is safe for children.",
+   "candidate": "Children for safe is drug the.",
+   "BLEU": 0.3021375397356768,
+   "ROUGE-1": 1.0,
+   "ROUGE-2": 0.0,
+   "ROUGE-L": 0.16666666666666666,
+   "BERTScore": 0.8850036075487773
+  },
+  {
+   "pair": "right, but short",
+   "reference": "The drug is safe for children.",
+   "candidate": "Safe.",
+   "BLEU": 0.006737946999085467,
+   "ROUGE-1": 0.2857142857142857,
+   "ROUGE-2": 0.0,
+   "ROUGE-L": 0.2857142857142857,
+   "BERTScore": 0.9123022754469607
+  },
+  {
+   "pair": "unrelated",
+   "reference": "The drug is safe for children.",
+   "candidate": "Stock markets fell sharply on Monday.",
+   "BLEU": 0.0,
+   "ROUGE-1": 0.0,
+   "ROUGE-2": 0.0,
+   "ROUGE-L": 0.0,
+   "BERTScore": 0.8713428788402303
+  }
+ ],
+ "answers": [
+  {
+   "prediction": "Paris",
+   "truth": "Paris",
+   "exact match": 1.0,
+   "token F1": 1.0
+  },
+  {
+   "prediction": "Paris, France",
+   "truth": "Paris",
+   "exact match": 0.0,
+   "token F1": 0.6666666666666666
+  },
+  {
+   "prediction": "The city of Paris",
+   "truth": "Paris",
+   "exact match": 0.0,
+   "token F1": 0.5
+  },
+  {
+   "prediction": "It is not Paris",
+   "truth": "Paris",
+   "exact match": 0.0,
+   "token F1": 0.4
+  },
+  {
+   "prediction": "Lyon",
+   "truth": "Paris",
+   "exact match": 0.0,
+   "token F1": 0.0
+  }
+ ],
+ "chart pair": {
+  "reference": "The drug is safe for children.",
+  "candidate": "The medicine is safe for kids.",
+  "matches": [
+   [
+    "the",
+    "the",
+    0.9947842955589294
+   ],
+   [
+    "medicine",
+    "drug",
+    0.9481048583984375
+   ],
+   [
+    "is",
+    "is",
+    0.9944348335266113
+   ],
+   [
+    "safe",
+    "safe",
+    0.9942314028739929
+   ],
+   [
+    "for",
+    "for",
+    0.9915180206298828
+   ],
+   [
+    "kids",
+    "children",
+    0.9644843339920044
+   ],
+   [
+    ".",
+    ".",
+    0.9999969005584717
+   ]
+  ],
+  "BLEU": 0.4272870063962341,
+  "ROUGE-1": 0.6666666666666666,
+  "BERTScore": 0.9839363694190979
+ },
+ "summeval": {
+  "summaries": 1600,
+  "references per summary": 11,
+  "metrics": [
+   "BLEU",
+   "ROUGE-1",
+   "ROUGE-2",
+   "ROUGE-L",
+   "BERTScore",
+   "length"
+  ],
+  "dimensions": [
+   "relevance",
+   "consistency",
+   "coherence",
+   "fluency"
+  ],
+  "spearman": {
+   "BLEU": {
+    "relevance": 0.24173014654495115,
+    "consistency": 0.1573312097485247,
+    "coherence": 0.16687197396303774,
+    "fluency": 0.11456582034033005
+   },
+   "ROUGE-1": {
+    "relevance": 0.3229807342514638,
+    "consistency": 0.16459318902865422,
+    "coherence": 0.20875490004873345,
+    "fluency": 0.12010876191335505
+   },
+   "ROUGE-2": {
+    "relevance": 0.22362932074660197,
+    "consistency": 0.14238980432588186,
+    "coherence": 0.1346655303029948,
+    "fluency": 0.07930273587595259
+   },
+   "ROUGE-L": {
+    "relevance": 0.23749989788032635,
+    "consistency": 0.1433603857177649,
+    "coherence": 0.19115391090037526,
+    "fluency": 0.0890759525377356
+   },
+   "BERTScore": {
+    "relevance": 0.33686150601017306,
+    "consistency": 0.16504880043892067,
+    "coherence": 0.28735411514221704,
+    "fluency": 0.19144278675836288
+   },
+   "length": {
+    "relevance": 0.24558774625529292,
+    "consistency": 0.09437876896033788,
+    "coherence": 0.08627792783866611,
+    "fluency": 0.012377386619796362
+   }
+  },
+  "mean": {
+   "BLEU": 0.331513562110344,
+   "ROUGE-1": 0.47608321011794225,
+   "ROUGE-2": 0.2489364236922572,
+   "ROUGE-L": 0.341338105955754,
+   "BERTScore": 0.8892966838645351,
+   "length": 59.10875,
+   "relevance": 3.7770833333333336,
+   "consistency": 4.660416666666666,
+   "coherence": 3.4125,
+   "fluency": 4.672916666666667
+  }
+ }
+}
